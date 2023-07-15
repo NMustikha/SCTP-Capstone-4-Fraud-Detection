@@ -18,11 +18,15 @@ The dataset describes the transactions of money using a simulator to generate sy
 * Same amounts transacted for transfer and cash out could be fraud or non fraud. However, the duration of transactions determine its fraudulent nature.
   * For example, for non fraud, difference between transactions are negative whereas fraud is almost always a positive difference.
 * Overall, fraud behaviour is determined by the same amount transacted for transfer and cashout and the transactions have to happen within the hour.
+* For ML models, accuracies of both models are reduced at 80% training data as compared to at 50% training data
 
 #### Insights
 * Easier to predict as the data is well balanced, clean and clear cut
 * Model could also be biased so will need more data as input to better train the model
+* Having a split of more training data does not always result in better accuracies due to overfitting. Similarly, too little of training data may result in underfitting.
+  * Number of iterations also play apart in the accuracy of model.
 * Does not accurately reflect actual fraudsters as it is evident that based on the dataset transactions of same amounts happen within the same hour. Hence, if this happens in real life, it is easily detected as fraud.
+
 
 #### Other Comments
 As the dataset filtered and used as input is balanced, could consider increasing the size of the clean and filtered dataset to improve both models.
